@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+<!-- BÀI TẬP LÀM THÊM -->
+<!-- BÀI 1: TÍNH THUẾ THU NHẬP CÁ NHÂN -->
+    <div class="container">
+        <div>BÀI 1: TÍNH THUẾ THU NHẬP CÁ NHÂN</div>
+        <br>
+      <label for="name">Họ và tên:</label>
+      <input id="name" type="text" />
+      <br />
+      <br />
+      <label for="income">Nhập tổng thu nhập:</label>
+      <input id="income" type="number" />
+      <i>(Đv: Triệu)</i>
+      <br />
+      <br />
+      <label for="dependent">Nhập số người phụ thuộc:</label>
+      <input id="dependent" type="number" />
+      <br><br>
+      <button onclick="calculateTax()">Xác nhận</button>
+      <div id="displayResult" style="margin-top: 20px; display: none"></div>
+    </div>
+    <br />
+    <br />
+    <!-- BÀI 2: TÍNH TIỀN CÁP -->
+    <div class="container">
+      <div>BÀI 2: TÍNH TIỀN CÁP</div>
+      <br>
+      <label for="cusId">Mã khách hàng</label>
+      <input id="cusId" type="text" />
+      <br><br>
+  <label for="cusType">Chọn loại khách hàng</label>
+      <select name="" id="cusType" onchange="swapCusType()">
+        <option value="ND">Nhà Dân</option>
+        <option value="DN">Doanh Nghiệp</option>
+      </select>
+      <br><br>
+      <label for="inputChannel">Nhập số kênh</label>
+      <input id="inputChannel" type="number" />
+      <br><br>
+      <div id="showConnect" style="display: none"> 
+        <label for="inputConnect">Nhập số kết nối</label>
+        <input id="inputConnect" type="number" />
+      </div><br>
+      <button onclick="calculateMoney()">Tính tiền cáp</button>
+      <div id="showResult"></div>
+    </div>
+    <script src="./btvn-js-b5-optional.js"></script>
+  </body>
+</html>

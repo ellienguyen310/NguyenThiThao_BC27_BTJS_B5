@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+<!-- BÀI TẬP BẮT BUỘC -->
+<!-- BÀI 1: TÍNH TIỀN ĐIỆN -->
+    <div style="margin: 100px" class="container">
+        <div>BÀI 1</div>
+        <br>
+      <label for="name">Họ và tên:</label>
+      <input id="name" type="text" />
+      <br />
+      <br />
+      <label for="kw">Số Kw tiêu thụ:</label>
+      <input id="kw" type="number" />
+      <br />
+      <br />
+      <button onclick="calculateKw()">Xác nhận</button>
+      <br />
+      <div id="pay" style="display: none">
+        <span>Số tiền điện bạn phải trả là:</span>
+        <span id="amount"></span>
+        <span>VNĐ</span>
+      </div>
+    </div>
+<!-- BÀI 2: TÍNH TỔNG ĐIỂM TỐT NGHIỆP VÀ XÉT ĐẬU RỚT -->
+    <div style="margin: 100px" class="container">
+        <div>BÀI 2</div>
+        <br>
+      <label for="standardScore">Điểm chuẩn:</label>
+      <input id="standardScore" type="number" />
+      <br />
+      <br />
+      <label for="mScore">Điểm môn Toán:</label>
+      <input id="mScore" type="number" />
+      <label for="eScore">Điểm môn Anh:</label>
+      <input id="eScore" type="number" />
+      <label for="lScore">Điểm môn Văn:</label>
+      <input id="lScore" type="number" />
+      <br />
+      <br />
+      <p>Chọn khu vực dự thi</p>
+      <select name="" id="area">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="X">Không thuộc khu vực ưu tiên</option>
+      </select>
+      <p>Chọn đối tượng dự thi</p>
+      <select name="" id="object">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="0">Không thuộc đối tượng ưu tiên</option>
+      </select>
+      <button onclick="calculateScore()">Xác nhận</button>
+      <div style="margin-top: 20px" id="total"><div>
+
+    </div>
+    <script src="./btvn-js-b5-required.js"></script>
+  </body>
+</html>
